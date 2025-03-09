@@ -1,83 +1,211 @@
-# ⚠️ Importante!!!
-Criamos um novo link para o primeiro desafio porque o link original apresentou problemas. Quem já completou o desafio pode continuar usando o link original para enviar seu repositório. Se você ainda não começou o desafio, utilize o novo link.
+    #include <stdio.h>
 
-# Desafio Super Trunfo - Países - Cadastro das Cartas
 
-Bem-vindo ao desafio "Super Trunfo - Países"! No jogo Super Trunfo, os jogadores comparam as propriedades das cartas para determinar a mais forte. O tema deste Super Trunfo é "Países," onde você comparará as propriedades das cidades.
+int main() {
 
-A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, que consiste no cadastro das cartas.
+    printf("\nSuperTrunfo Paises\n");
+    printf("\n--- Pais Aleatorio ---\n");
+    printf("Nome do pais: Brasil\n");
+    printf("\n--- Cadastro da carta ---\n");
+    printf("Digite as informações da carta: A1 \n");
 
-O desafio está dividido em três níveis: Novato, Aventureiro e Mestre, com cada nível adicionando mais complexidade ao anterior. Você deve escolher qual desafio quer realizar.
+    int populacao;
+    printf("Digite a populacao total da cidade A1: ");
+    scanf("%d", &populacao);
 
-### 🚨 Atenção: 
-O nível Novato do desafio é focado apenas no cadastro das cartas, utilizando as funções scanf para ler os dados e printf para exibi-los.
+    float Area;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area);
 
-## 🎮 Nível Novato
+    float pib;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib);
 
-No nível Novato, você iniciará criando o sistema básico do jogo Super Trunfo com o tema "Países". As cartas serão divididas por estados, cada um com quatro cidades. 
+    int pontos_turisticos;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos);
 
-Cada país será dividido em oito estados, identificados pelas letras de A a H. Cada estado terá quatro cidades, numeradas de 1 a 4. A combinação da letra do estado e o número da cidade define o código da carta (por exemplo, A01, A02, B01, B02).
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f Km²\n", Area);
+    printf("PIB: %.2f\n", pib);
+    printf("Pontos turísticos: %d\n", pontos_turisticos);
 
-### 🚩 Objetivo:
-- Criar cartas representando cidades, contendo as seguintes propriedades:
-  - **População**
-  - **Área**
-  - **PIB**
-  - **Número de pontos turísticos**
-  
-### ⚙️ Funcionalidades do Sistema:
-- O sistema permitirá ao usuário cadastrar cartas de cidades, inserindo manualmente os dados via terminal de comando.
-- Após o cadastro, o sistema exibirá os dados de cada cidade de forma clara e organizada.
 
-### 📥 Entrada e 📤 Saída de Dados:
-- O usuário insere os dados de cada carta interativamente.
-- Após o cadastro, os dados são exibidos com todas as propriedades da cidade, uma por linha.
+    printf("Digite as informacoes da carta: A2 \n");
 
----
+    int populacao2;
+    printf("Digite a população total da cidade A2: ");
+    scanf("%d", &populacao2);
 
-## 🛡️ Nível Aventureiro
+    float Area2;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area2);
 
-No nível Aventureiro, você expandirá o sistema para incluir propriedades calculadas, permitindo uma análise mais detalhada das cartas.
+    float pib2;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib2);
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Novas Propriedades Calculadas:**
-  - **Densidade Populacional:** População dividida pela área da cidade.
-  - **PIB per Capita:** PIB total dividido pela população.
+    int pontos_turisticos2;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos2);
 
-### ⚙️ Funcionalidades do Sistema:
-- O sistema agora calculará automaticamente a Densidade Populacional e o PIB per Capita com base nos dados inseridos.
-- Essas novas propriedades serão adicionadas às informações exibidas para cada cidade.
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f Km²\n", Area2);
+    printf("PIB: %.2f\n", pib2);
+    printf("Pontos turísticos: %d\n", pontos_turisticos2);
 
-### 📥 Entrada e 📤 Saída de Dados:
-- O usuário continua inserindo os dados de cada carta interativamente.
-- O sistema exibirá os dados, incluindo as novas propriedades calculadas, de forma clara e organizada.
+    printf("Digite as informacoes da carta: A3 \n");
 
----
+    int populacao3;
+    printf("Digite a população total da cidade A3: ");
+    scanf("%d", &populacao3);
 
-## 🏆 Nível Mestre
+    float Area3;
+    printf("Digite a area total (Km²): "); 
+    scanf("%f", &Area3);
 
-No nível Mestre, você implementará comparações entre as cartas, utilizando operadores relacionais e manipulando grandes números com precisão.
+    float pib3;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib3);
 
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Comparação de Cartas:**
-  - O sistema permitirá ao usuário comparar duas cartas com base nas propriedades inseridas e calculadas.
-  - Cada carta terá um "Super Poder", que é a soma de todas as propriedades.
-  
-### ⚙️ Funcionalidades do Sistema:
-- O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades comparadas.
-- A comparação considerará:
-  - **Densidade Populacional:** Vence a carta com menor valor.
-  - **Outras Propriedades:** Vence a carta com maior valor.
-- O resultado das comparações será exibido claramente para cada propriedade.
+    int pontos_turisticos3;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos3);
 
-### 📥 Entrada e 📤 Saída de Dados:
-- O usuário insere as cartas a serem comparadas.
-- O sistema exibe os resultados das comparações, indicando a carta vencedora para cada propriedade.
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao3);
+    printf("Área: %.2f Km²\n", Area3);
+    printf("PIB: %.2f\n", pib3);
+    printf("Pontos turísticos: %d\n", pontos_turisticos3);
 
----
 
-Ao concluir todos os níveis, você terá criado um sistema incial para o jogo Super Trunfo, com funcionalidades de cadastro, cálculo e comparação de propriedades. 
+    printf("Digite as informacoes da carta: A4 \n");
 
-Boa sorte e divirta-se programando!
+    int populacao4;
+    printf("Digite a população total da cidade A4: ");
+    scanf("%d", &populacao4);
 
-Equipe de Ensino - MateCheck
+    float Area4;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area4);
+
+    float pib4;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib4);
+
+    int pontos_turisticos4;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos4);
+
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao4);
+    printf("Área: %.2f Km²\n", Area4);
+    printf("PIB: %.2f\n", pib4);
+    printf("Pontos turísticos: %d\n", pontos_turisticos4);
+
+    printf("Digite as informacoes da carta: B1 \n");
+
+    int populacao5;
+    printf("Digite a população total da cidade B1: ");
+    scanf("%d", &populacao5);
+
+    float Area5;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area5);
+
+    float pib5;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib5);
+
+    int pontos_turisticos5;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos5);
+
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao5);
+    printf("Área: %.2f Km²\n", Area5);
+    printf("PIB: %.2f\n", pib5);
+    printf("Pontos turísticos: %d\n", pontos_turisticos5);
+
+    printf("Digite as informacoes da carta: B2 \n");
+
+    int populacao6;
+    printf("Digite a população total da cidade B2: ");
+    scanf("%d", &populacao6);
+
+    float Area6;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area6);
+
+    float pib6;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib6);
+
+    int pontos_turisticos6;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos6);
+
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao6);
+    printf("Área: %.2f Km²\n", Area6);
+    printf("PIB: %.2f\n", pib6);
+    printf("Pontos turísticos: %d\n", pontos_turisticos6);
+
+    printf("Digite as informacoes da carta: B3 \n");
+
+    int populacao7;
+    printf("Digite a população total da cidade B3: ");
+    scanf("%d", &populacao7);
+    
+    float Area7;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area7);
+
+    float pib7;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib7);
+
+    int pontos_turisticos7;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos7);
+
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao7);
+    printf("Área: %.2f Km²\n", Area7);
+    printf("PIB: %.2f\n", pib7);
+    printf("Pontos turísticos: %d\n", pontos_turisticos7);
+
+    printf("Digite as informacoes da carta: B4 \n");
+
+    int populacao8;
+    printf("Digite a população total da cidade B4: ");
+    scanf("%d", &populacao8);
+
+    float Area8;
+    printf("Digite a area total (Km²): ");
+    scanf("%f", &Area8);
+
+    float pib8;
+    printf("Digite o PIB: ");
+    scanf("%f", &pib8);
+
+    int pontos_turisticos8;
+    printf("Digite a quantidade de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos8);
+
+    printf("\n--- Informacoes da carta ---\n");
+    printf("População: %d\n", populacao8);
+    printf("Área: %.2f Km²\n", Area8);
+    printf("PIB: %.2f\n", pib8);
+    printf("Pontos turísticos: %d\n", pontos_turisticos8);
+
+    
+
+
+
+    
+    return 0;
+
+}
